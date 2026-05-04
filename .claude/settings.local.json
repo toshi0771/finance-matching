@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(npm install:*)",
+      "Bash(ls -la /Users/user/Desktop/finance-matching/.env*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm info:*)",
+      "Bash(node -e \"const c = require\\('/Users/user/Desktop/finance-matching/node_modules/@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).filter\\(k => !k.startsWith\\('_'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; p=json.load\\(sys.stdin\\); [print\\(k,v\\) for k,v in p.get\\('exports',{}\\).items\\(\\) if 'server' in k or 'app' in k]\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/api/test)",
+      "Bash(node -e \"const s = require\\('stripe'\\); const t = require\\('./node_modules/stripe/types/index.d.ts'\\) || ''; console.log\\(s.version || 'ok'\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('version'\\)\\)\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(node -e \"const Stripe = require\\('stripe'\\); const s = new Stripe\\('sk_test_x'\\); console.log\\(Object.keys\\(s\\)\\)\")"
     ]
   }
 }

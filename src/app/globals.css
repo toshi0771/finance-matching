@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy:      #0F1C2E;
+  --navy-800:  #162338;
+  --navy-700:  #1e3050;
+  --gold:      #C9A84C;
+  --gold-light:#E0C070;
+  --bg-page:   #F2F4F7;
+  --bg-card:   #FFFFFF;
+  --text-body: #1C2B3A;
+  --text-muted:#6B7A8D;
+  --border:    #E2E6EC;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy:       var(--navy);
+  --color-navy-800:   var(--navy-800);
+  --color-navy-700:   var(--navy-700);
+  --color-gold:       var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-bg-page:    var(--bg-page);
+  --color-bg-card:    var(--bg-card);
+  --color-text-body:  var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-border:     var(--border);
+  --font-sans:        var(--font-noto-sans-jp), 'Noto Sans JP', sans-serif;
+  --font-display:     var(--font-playfair-display), 'Playfair Display', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-noto-sans-jp), 'Noto Sans JP', sans-serif;
 }
