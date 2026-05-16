@@ -15,7 +15,9 @@
       "Bash(node -e \"const s = require\\('stripe'\\); const t = require\\('./node_modules/stripe/types/index.d.ts'\\) || ''; console.log\\(s.version || 'ok'\\)\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('version'\\)\\)\")",
       "Bash(pkill -f \"next dev\")",
-      "Bash(node -e \"const Stripe = require\\('stripe'\\); const s = new Stripe\\('sk_test_x'\\); console.log\\(Object.keys\\(s\\)\\)\")"
+      "Bash(node -e \"const Stripe = require\\('stripe'\\); const s = new Stripe\\('sk_test_x'\\); console.log\\(Object.keys\\(s\\)\\)\")",
+      "Bash(mkdir -p /Users/user/Desktop/finance-matching/src/app/sign-in/\\\\[\\\\[\\\\...sign-in\\\\]\\\\])",
+      "Bash(mkdir -p /Users/user/Desktop/finance-matching/src/app/sign-up/\\\\[\\\\[\\\\...sign-up\\\\]\\\\])"
     ]
   }
 }

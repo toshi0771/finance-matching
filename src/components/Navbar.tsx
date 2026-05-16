@@ -58,7 +58,7 @@ export default function Navbar() {
             }}
           />
         ) : (
-          <SignInButton mode="modal">
+          <SignInButton>
             <button
               className="rounded-full px-5 py-2 text-sm font-medium transition-colors"
               style={{ background: 'var(--gold)', color: 'var(--navy)' }}
