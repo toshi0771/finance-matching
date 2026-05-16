@@ -2,6 +2,8 @@ import { supabase, FinanceCompany } from '@/lib/supabase';
 import Navbar from '@/components/Navbar';
 import CompanySidebar from '@/components/CompanySidebar';
 
+export const dynamic = 'force-dynamic';
+
 async function getCompanies(): Promise<FinanceCompany[]> {
   const { data, error } = await supabase
     .from('finance_companies')
@@ -20,7 +22,7 @@ async function getCompanies(): Promise<FinanceCompany[]> {
     .order('name');
 
   if (error) {
-    console.error('Failed to fetch companies:', error.message);
+    console.error('Failed to fetch companies:', error);
     return [];
   }
 
