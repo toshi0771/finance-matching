@@ -103,3 +103,24 @@ export default function CompaniesPage() {
         <h2 className="text-2xl font-bold text-center mb-8" style={{ color: 'var(--navy)' }}>掲載のお問い合わせ</h2>
         <div className="space-y-4">
 
+        <input className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm"
+            placeholder="会社名" value={form.company}
+            onChange={e => setForm({...form, company: e.target.value})} />
+          <input className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm"
+            placeholder="担当者名" value={form.name}
+            onChange={e => setForm({...form, name: e.target.value})} />
+          <input className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm"
+            placeholder="メールアドレス" type="email" value={form.email}
+            onChange={e => setForm({...form, email: e.target.value})} />
+          <textarea className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm h-32"
+            placeholder="お問い合わせ内容" value={form.message}
+            onChange={e => setForm({...form, message: e.target.value})} />
+          <button style={{ background: 'var(--navy)', color: 'white' }}
+            className="w-full py-3 rounded-lg font-bold hover:opacity-90 transition">
+            送信する
+          </button>
+        </div>
+      </section>
+    </div>
+  )
+}
