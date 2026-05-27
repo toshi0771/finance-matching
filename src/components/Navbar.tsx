@@ -38,6 +38,13 @@ export default function Navbar() {
         >
           業者様へ
         </a>
+        <a
+          href="/guide"
+          className="text-sm font-medium transition-colors hover:text-white"
+          style={{ color: 'var(--gold)' }}
+        >
+          まず始めに
+        </a>
       </nav>
 
       <div className="shrink-0 flex items-center">
