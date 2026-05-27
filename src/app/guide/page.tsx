@@ -53,7 +53,7 @@ export default function GuidePage() {
               地図で会社を探す
             </Link>
           )}
-          <Link href="/users" style={{ color: 'var(--navy)' }}
+          <Link href="/users" 
             className="px-8 py-3 rounded-full font-bold border-2 hover:opacity-70 transition inline-block"
             style={{ borderColor: 'var(--navy)', color: 'var(--navy)' }}>
             詳しく見る
