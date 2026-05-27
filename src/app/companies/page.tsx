@@ -34,12 +34,12 @@ export default function CompaniesPage() {
         <h2 className="text-2xl font-bold text-center mb-10" style={{ color: 'var(--navy)' }}>掲載するメリット</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { icon: '📍', title: '地図で地域集客', desc: 'エリアを絞って近隣ユーザーへアプローチ。営業エリアに合った見込み顧客が届きます。' },
-            { icon: '💼', title: '質の高いリード', desc: '氏名・年齢・職業・連絡先登録済みのユーザーから問い合わせが来るため、商談効率が高い。' },
-            { icon: '📊', title: '顧客データが蓄積', desc: '成約した顧客情報がダッシュボードに蓄積。リピート営業・分析に活用できます。' },
+            { title: '地図で地域集客', desc: 'エリアを絞って近隣ユーザーへアプローチ。営業エリアに合った見込み顧客が届きます。' },
+            { title: '質の高いリード', desc: '氏名・年齢・職業・連絡先登録済みのユーザーから問い合わせが来るため、商談効率が高い。' },
+            { title: '顧客データが蓄積', desc: '成約した顧客情報がダッシュボードに蓄積。リピート営業・分析に活用できます。' },
           ].map((b, i) => (
             <div key={i} className="text-center p-6 rounded-xl border border-gray-100 shadow-sm">
-              <div className="text-4xl mb-3">{b.icon}</div>
+              
               <h3 className="font-bold text-lg mb-2" style={{ color: 'var(--navy)' }}>{b.title}</h3>
               <p className="text-gray-600 text-sm">{b.desc}</p>
             </div>
@@ -54,7 +54,7 @@ export default function CompaniesPage() {
           <div className="border-2 border-gray-200 rounded-xl p-6">
             <h3 className="font-bold text-xl mb-2" style={{ color: 'var(--navy)' }}>無料プラン</h3>
             <p className="text-3xl font-bold mb-1">¥0<span className="text-base font-normal">/月</span></p>
-            <p className="text-sm text-gray-500 mb-4">問い合わせ受信時のみ手数料</p>
+            <p className="text-sm text-gray-500 mb-4">問い合わせ受信１件につき5,000円</p>
             <ul className="text-sm text-gray-700 space-y-2">
               <li>✅ 地図掲載</li>
               <li>✅ カテゴリ登録</li>
@@ -65,8 +65,8 @@ export default function CompaniesPage() {
           </div>
           <div className="border-2 rounded-xl p-6" style={{ borderColor: 'var(--gold)', background: 'var(--navy)' }}>
             <h3 className="font-bold text-xl mb-2" style={{ color: 'var(--gold)' }}>サブスクプラン</h3>
-            <p className="text-3xl font-bold text-white mb-1">要お問い合わせ</p>
-            <p className="text-sm opacity-60 text-white mb-4">月額固定 + 機能フル解放</p>
+            <p className="text-3xl font-bold text-white mb-1">¥10,000<span className="text-base font-normal">/月</span></p>
+            <p className="text-sm opacity-60 text-white mb-4">月額固定 ・全機能利用可能</p>
             <ul className="text-sm text-white space-y-2">
               <li>✅ 地図掲載</li>
               <li>✅ カテゴリ登録</li>

@@ -8,7 +8,7 @@ const faqs = [
   { q: '個人情報は安全ですか？', a: '登録情報は問い合わせ先の金融会社にのみ開示されます。第三者への販売は一切行いません。' },
   { q: 'どんな金融会社に相談できますか？', a: '個人融資・法人融資・不動産担保融資・手形割引・ファクタリングなど多様なカテゴリの会社が登録されています。' },
   { q: '問い合わせ後の流れは？', a: '問い合わせ後、金融会社から直接ご連絡が届きます。その後は会社と直接面談・審査となります。' },
-  { q: 'エリア外の会社にも問い合わせできますか？', a: 'はい、地図で全国の会社を検索・問い合わせできます。' },
+  { q: 'エリア外の会社にも問い合わせできますか？', a: 'はい、地図で大阪府内の金融会社を検索・問い合わせできます。' },
 ]
 
 export default function UsersPage() {
@@ -45,12 +45,12 @@ export default function UsersPage() {
         <h2 className="text-2xl font-bold text-center mb-10" style={{ color: 'var(--navy)' }}>ユーザーのメリット</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { icon: '🗺️', title: '地図で直感的に検索', desc: '近くの金融会社をマップ上で一目で確認。エリア・カテゴリで絞り込み可能。' },
-            { icon: '⭐', title: 'レビューで安心選び', desc: '実際の利用者のレビューを参考に、信頼できる会社を選べます。' },
-            { icon: '💬', title: '無料で複数社に問い合わせ', desc: '登録無料・問い合わせ無料。複数社に同時に相談できます。' },
+            { title: '地図で直感的に検索', desc: '近くの金融会社をマップ上で一目で確認。エリア・カテゴリで絞り込み可能。' },
+            { title: 'レビューで安心選び', desc: '実際の利用者のレビューを参考に、信頼できる会社を選べます。' },
+            { title: '無料で複数社に問い合わせ', desc: '登録無料・問い合わせ無料。複数社に同時に相談できます。' },
           ].map((b, i) => (
             <div key={i} className="text-center p-6 rounded-xl border border-gray-100 shadow-sm">
-              <div className="text-4xl mb-3">{b.icon}</div>
+              
               <h3 className="font-bold text-lg mb-2" style={{ color: 'var(--navy)' }}>{b.title}</h3>
               <p className="text-gray-600 text-sm">{b.desc}</p>
             </div>
