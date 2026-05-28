@@ -13,7 +13,26 @@ const faqs = [
 export default function CompaniesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [form, setForm] = useState({ company: '', name: '', email: '', message: '' })
+  const [sending, setSending] = useState(false)
+const [sent, setSent] = useState(false)
 
+const handleSubmit = async () => {
+  if (!form.name || !form.email || !form.message) return
+  setSending(true)
+  try {
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...form, type: 'company' }),
+    })
+    setSent(true)
+    setForm({ company: '', name: '', email: '', message: '' })
+  } catch (e) {
+    alert('送信に失敗しました。')
+  } finally {
+    setSending(false)
+  }
+}
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
@@ -115,10 +134,16 @@ export default function CompaniesPage() {
           <textarea className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm h-32"
             placeholder="お問い合わせ内容" value={form.message}
             onChange={e => setForm({...form, message: e.target.value})} />
-          <button style={{ background: 'var(--navy)', color: 'white' }}
-            className="w-full py-3 rounded-lg font-bold hover:opacity-90 transition">
-            送信する
-          </button>
+          {sent ? (
+                <p className="text-center text-green-600 font-bold">✅ 送信しました！担当者よりご連絡いたします。</p>
+              ) : (
+                <button style={{ background: 'var(--navy)', color: 'white' }}
+                  className="w-full py-3 rounded-lg font-bold hover:opacity-90 transition disabled:opacity-50"
+                  onClick={handleSubmit}
+                  disabled={sending}>
+                  {sending ? '送信中...' : '送信する'}
+                </button>
+              )}
         </div>
       </section>
     </div>
