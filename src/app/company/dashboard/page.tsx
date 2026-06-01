@@ -5,7 +5,7 @@ import { createAdminClient } from '@/lib/supabase';
 import { stripe } from '@/lib/stripe';
 import CompanyEditForm from '@/components/CompanyEditForm';
 
-export const metadata = { title: 'ダッシュボード | FinanceMatch' };
+export const metadata = { title: 'ダッシュボード | MoneyFind' };
 
 const STATUS_LABEL: Record<string, string> = {
   active: '有効',

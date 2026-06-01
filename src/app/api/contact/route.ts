@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
       : `【ユーザーからのお問い合わせ】${name}`;
 
     await resend.emails.send({
-      from: 'FinanceMatch <onboarding@resend.dev>',
+      from: 'MoneyFind <onboarding@resend.dev>',
       to: process.env.ADMIN_EMAIL!,
       subject,
       html: `

@@ -11,7 +11,7 @@ export default function GuidePage() {
       <section style={{ background: 'var(--navy)' }} className="py-20 px-6 text-center text-white">
         <h1 className="text-3xl font-bold mb-4">まず始めに</h1>
         <p className="text-lg opacity-80 max-w-xl mx-auto">
-          FinanceMatchの使い方をご説明します。資金調達をお考えの方も、掲載をご検討の金融会社様も、まずこちらをご覧ください。
+          マネーファインドの使い方をご説明します。資金調達をお考えの方も、掲載をご検討の金融会社様も、まずこちらをご覧ください。
         </p>
       </section>
 

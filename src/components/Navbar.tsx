@@ -17,7 +17,7 @@ export default function Navbar() {
           className="text-xl font-bold tracking-tight"
           style={{ fontFamily: 'var(--font-playfair-display), serif', color: 'var(--gold)' }}
         >
-          FinanceMatch
+          MoneyFind
         </span>
         <span className="text-xs font-medium text-white/50 hidden sm:block">大阪金融マッチング</span>
       </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
           <div className="bg-white rounded-2xl p-8 max-w-sm w-full mx-4 shadow-2xl"
             onClick={e => e.stopPropagation()}>
             <h2 className="text-xl font-bold mb-2 text-center" style={{ color: 'var(--navy)' }}>
-              FinanceMatchへようこそ
+              マネーファインドへようこそ
             </h2>
             <p className="text-sm text-gray-500 text-center mb-6">
               初めての方は新規登録、すでにアカウントをお持ちの方はログインへ

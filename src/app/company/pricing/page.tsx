@@ -2,7 +2,7 @@ import { currentUser } from '@clerk/nextjs/server';
 import Navbar from '@/components/Navbar';
 import SubscribeButton from '@/components/SubscribeButton';
 
-export const metadata = { title: '料金プラン | FinanceMatch' };
+export const metadata = { title: '料金プラン | MoneyFind' };
 
 export default async function PricingPage() {
   const user = await currentUser();

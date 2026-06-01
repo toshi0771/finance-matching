@@ -43,7 +43,7 @@ export default function ProfileSetupForm() {
             color: 'var(--gold)',
           }}
         >
-          FinanceMatch
+          MoneyFind
         </span>
       </header>
 

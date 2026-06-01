@@ -15,7 +15,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "大阪金融マッチング | FinanceMatch",
+  title: "大阪金融マッチング | MoneyFind",
   description: "大阪府内の金融会社を探せるマッチングサービス",
 };
 
